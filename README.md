@@ -1,65 +1,62 @@
-🔐 Authentication-Based Login & Registration System
+<h1 align="center">🔐 Authentication-Based Login & Registration System</h1>
 
-This project is a Java Servlet + JSP-based application that demonstrates user registration, authentication, and login validation with full input validation.
+<p align="center">
+A Java Servlet + JSP web application for secure user registration and authentication with full input validation and session handling.
+</p>
 
-🚀 Features
+---
 
-Registration Form with validation for:
+## 🚀 Features
 
-✅ Username → must be alphabetic
+<details>
+<summary><strong>📄 Registration Form</strong></summary>
 
-✅ UserID → unique check in DB
+- ✅ <strong>Username</strong> – Only alphabetic characters allowed  
+- ✅ <strong>UserID</strong> – Must be unique in the database  
+- ✅ <strong>Email</strong> – Validated using Regex  
+- ✅ <strong>Password & Confirm Password</strong> – Must match  
+- ✅ <strong>Age</strong> – Between 18 and 80  
 
-✅ Email → regex-based validation
+</details>
 
-✅ Password & Confirm Password → must match
+<details>
+<summary><strong>🔐 Login Form</strong></summary>
 
-✅ Age → between 18 and 80
+- 🔍 Credentials verified against database records  
+- ❌ Errors shown for invalid input using session messages  
 
-Login Form with validation against database records
+</details>
 
-Error Handling: session messages displayed on invalid inputs
+<details>
+<summary><strong>🛠 Backend Features</strong></summary>
 
-DAO Layer for database communication (save, check existence, validate credentials)
+- 🗃️ DAO Layer for DB interaction  
+- 🔐 Session management with `HttpSession`  
+- 🚫 Input validation and duplicate checking  
+- 📡 JDBC with MySQL  
 
-Session Management with HttpSession
+</details>
 
-🛠 Tech Stack
+---
 
-Java (Servlets, JSP)
+## 🛠 Tech Stack
 
-HTML, CSS, Bootstrap 5
+| Language / Tech | Purpose |
+|-----------------|---------|
+| **Java (Servlets & JSP)** | Backend logic |
+| **HTML, CSS, Bootstrap 5** | Frontend UI |
+| **JDBC** | Database connectivity |
+| **MySQL** | Persistent storage |
+| **Apache Tomcat** | Servlet container |
 
-JDBC (DAO + DBUtil)
+---
 
-MySQL
+## 📁 Project Structure
 
-📂 Project Structure
-index.jsp         → Registration Page
-login.jsp         → Login Page
-register.java     → Servlet handling register & login logic
-UserDetails.java  → DAO for DB operations
-UserData.java     → Entity class
-style.css         → Custom styles
 
-⚡ Flow
-
-User registers → all fields validated → if valid, data saved in DB.
-
-If UserID already exists or input invalid → error shown via session message.
-
-After successful registration → redirected to Login page.
-
-User logs in → validated against DB → if correct, redirected to Home page with “Welcome <UserID>”.
-
-📸 Screenshots
-
-(You can add registration & login screenshots here)
-
-🔮 Future Improvements
-
-Encrypt passwords using BCrypt/MD5
-
-Add Forgot Password functionality
-
-Improve UI with modern components
+index.jsp           → Registration Page  
+login.jsp           → Login Page  
+register.java       → Servlet to handle register/login logic  
+UserDetails.java    → DAO for DB operations  
+UserData.java       → POJO (Entity class)  
+style.css           → Custom CSS styles  
