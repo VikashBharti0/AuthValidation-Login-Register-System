@@ -62,22 +62,27 @@ UserData.java       → POJO (Entity class)
 style.css           → Custom CSS styles  
 
 
-graph TD;
-    A[User Accesses Registration Page]
-    B[Input Validated on Server]
-    C[Save to MySQL DB if Valid]
-    D[Show Errors if Invalid or Duplicate UserID]
-    E[Redirect to Login Page]
-    F[Login Validation Against DB]
-    G[Welcome User on Success]
+⚡ Application Flow
 
-    A --> B
-    B -->|Valid| C
-    B -->|Invalid| D
-    C --> E
-    D --> A
-    E --> F
-    F --> G
+👤 User registers with form input.
+
+🛡️ Fields are validated (server-side).
+
+🗃️ If valid → data saved in MySQL.
+
+🚫 If UserID already exists → error via session message.
+
+🔁 On success → redirected to Login page.
+
+🔓 Login credentials are verified against DB.
+
+✅ If valid → redirected to Home page with:
+
+
+📸 Screenshots
+
+
+
 
 
 
