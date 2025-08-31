@@ -80,6 +80,7 @@ style.css           → Custom CSS styles
 
 
 📸 Screenshots
+![Image](https://github.com/user-attachments/assets/e8d39476-2c11-41c5-8c12-3c573fad3d21)
 
 
 
