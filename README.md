@@ -60,3 +60,24 @@ register.java       → Servlet to handle register/login logic
 UserDetails.java    → DAO for DB operations  
 UserData.java       → POJO (Entity class)  
 style.css           → Custom CSS styles  
+
+
+graph TD;
+    A[User Accesses Registration Page]
+    B[Input Validated on Server]
+    C[Save to MySQL DB if Valid]
+    D[Show Errors if Invalid or Duplicate UserID]
+    E[Redirect to Login Page]
+    F[Login Validation Against DB]
+    G[Welcome User on Success]
+
+    A --> B
+    B -->|Valid| C
+    B -->|Invalid| D
+    C --> E
+    D --> A
+    E --> F
+    F --> G
+
+
+
