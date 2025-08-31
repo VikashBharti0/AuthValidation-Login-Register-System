@@ -1,0 +1,40 @@
+#bgc{
+	background-image:linear-gradient(45deg,black,cyan);
+}
+#bgcrev{
+	background-image:linear-gradient(45deg,cyan,black);
+}
+.imglogin{
+	height:50px;
+	width:50px;
+}
+.logo{
+	font-weight:bold;
+}
+input{
+	margin:10px;
+}
+
+.card{
+	margin-left:500px;
+	width:400px;
+	box-shadow:0px 0px 5px black;
+}
+.card:hover{
+	box-shadow:0px 0px 15px #0080c0;
+	
+}
+input:hover{
+	border:2px solid green;
+}
+.imglogin:hover{
+	box-shadow:0px 0px 7px black;
+}
+.usericon{
+	height:60px;
+	width:60px;	
+	margin-left:150px;
+}
+.forget{
+	margin-left:110px;
+}
